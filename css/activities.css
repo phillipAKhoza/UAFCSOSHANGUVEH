@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden; /* Hide scrollbars */
+  text-align: center;
+  padding: 0.8em 0.4em;
+  width: 100%;
+}
+.hide-mobile {
+  display: none;
+}
+.logo {
+  width: 65px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  width: 35px;
+  margin-top: 35%;
+  color: #fff;
+}
+.head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/activities.JPG");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  height: 400px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(60, 66, 70);
+}
+
+nav ul li a:hover {
+  background-color: rgb(83, 89, 94);
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+#slideset2 {
+  margin-top: 40px;
+  height: 17em;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 10px;
+}
+#slideset2 figcaption {
+  font-weight: bold;
+}
+#welcomeText {
+  margin-top: 10%;
+}
+
+.quote1 {
+  margin-top: -15%;
+  font-size: 1.2em;
+}
+.quote2 {
+  margin-top: -35%;
+  font-size: 1.2em;
+}
+#slideset2 > * {
+  position: relative;
+  top: 100%;
+  animation: 12s autoplay2 infinite ease-in-out;
+}
+@keyframes autoplay2 {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#slideset2 > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#slideset2 > *:nth-child(2) {
+  animation-delay: 4s;
+}
+#slideset2 > *:nth-child(3) {
+  animation-delay: 8s;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  padding: 0 0 20px 0;
+  margin-bottom: 20px;
+}
+.activity-container p {
+  padding: 50px;
+}
+.activity-container h3 {
+  padding: 30px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  font-size: 1em;
+  background-color: rgb(61, 61, 60);
+  color: #fff;
+  margin-top: -20px;
+}
+footer P {
+  font-size: 0.8em;
+  background-color: rgb(61, 61, 60);
+  color: #fff;
+  padding: 10px 10px 5px 10px;
+}
+.footerimg {
+  width: 100px;
+}
+.fa img {
+  width: 50px;
+  padding: 10px 0 10px;
+}
+.responsive {
+  width: 100%;
+}
+@media only screen and (min-width: 425px) {
+  .responsive {
+    width: 45%;
+    float: left;
+    margin: 6px 10px;
+  }
+  #welcomeText {
+    margin-top: 15%;
+  }
+
+  .quote1 {
+    margin-top: -15%;
+    font-size: 1.2em;
+  }
+  .quote2 {
+    margin-top: -25%;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/activities.JPG");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    height: 450px;
+    overflow: hidden; /* Hide scrollbars */
+  }
+  .logo {
+    width: 80px;
+  }
+  .menu {
+    width: 50px;
+    margin-top: 30%;
+  }
+  #slideset2 {
+    margin-top: 40px;
+    height: 17em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 8%;
+    font-size: 1.5em;
+  }
+  .beliefs {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .quote1 {
+    margin-top: -6%;
+    font-size: 1.2em;
+  }
+  .quote2 {
+    margin-top: -12%;
+    font-size: 1.2em;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin: 0;
+  }
+  .activity-container p {
+    padding: 50px;
+    font-size: 1.3em;
+  }
+  .activity-container h3 {
+    padding: 30px;
+    font-size: 1.7em;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1em;
+    padding-top: 30px;
+  }
+  #bottomBar {
+    font-size: 1.3em;
+    padding-top: 30px;
+    margin: auto;
+    padding-top: 30px;
+  }
+  #Hline {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/activities.JPG");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 600px;
+    overflow: hidden; /* Hide scrollbars */
+  }
+  .logo {
+    width: 85px;
+  }
+
+  #slideset2 {
+    margin-top: 100px;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 5%;
+    font-size: 1.7em;
+  }
+
+  .quote1 {
+    margin-top: -6%;
+    font-size: 1.5em;
+  }
+  .quote2 {
+    margin-top: -8%;
+    font-size: 1.5em;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin: 0;
+  }
+  .activity-container p {
+    padding: 50px;
+    font-size: 1.3em;
+  }
+  .activity-container h3 {
+    padding: 30px;
+    font-size: 1.7em;
+  }
+  .grid2-container {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    padding: 10px 0 0 0;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1.5em;
+    padding-top: 30px;
+  }
+  .bottomBar {
+    font-size: 1.4em;
+    padding-top: 30px;
+    margin: auto;
+  }
+  .show-desktop {
+    display: block;
+    margin: 0 auto 15% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    text-align: right;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    left: 20px;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/activities.JPG");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    height: 680px;
+    overflow: hidden; /* Hide scrollbars */
+  }
+  .container {
+    overflow: hidden; /* Hide scrollbars */
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 5%;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .quote1 {
+    margin-top: -8%;
+    font-size: 2em;
+    padding: 20px;
+  }
+  .quote2 {
+    margin-top: -15%;
+    font-size: 2em;
+    padding: 20px;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin: 0;
+  }
+  .activity-container p {
+    padding: 50px;
+    font-size: 1.3em;
+  }
+  .activity-container h3 {
+    padding: 30px;
+    font-size: 1.7em;
+  }
+  .grid2-container {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    padding: 10px 0 0 0;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1.5em;
+    padding-top: 30px;
+  }
+  .bottomBar {
+    font-size: 1.4em;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .fa img {
+    width: 70px;
+  }
+  .show-desktop {
+    display: block;
+    margin: 0 auto 15% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    text-align: right;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    left: 20px;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+  }
+}

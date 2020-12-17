@@ -1,0 +1,1353 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden; /* Hide scrollbars */
+  text-align: center;
+  padding: 0.8em 0.4em;
+  width: 100%;
+}
+.hide-mobile {
+  display: none;
+}
+.logo {
+  width: 65px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  width: 35px;
+  margin-top: 45%;
+}
+.head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/worshipgw.png");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #e7e7e7;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+}
+.knowMore {
+  padding-top: 10px;
+  font-size: 0.9em;
+  color: #fff;
+}
+#slideset2 {
+  margin-top: 20px;
+  height: 15em;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 10px;
+}
+#slideset2 figcaption {
+  font-weight: bold;
+}
+#welcomeText {
+  margin-top: 15%;
+  font-size: 1em;
+}
+
+.quote1 {
+  margin-top: -15%;
+}
+.quote2 {
+  margin-top: -25%;
+}
+#slideset2 > * {
+  position: relative;
+  top: 100%;
+  animation: 12s autoplay2 infinite ease-in-out;
+}
+@keyframes autoplay2 {
+  0% {
+    top: 100%;
+  }
+  4% {
+    top: 0%;
+  }
+  33.33% {
+    top: 0%;
+  }
+  37.33% {
+    top: -100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+#slideset2 > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#slideset2 > *:nth-child(2) {
+  animation-delay: 4s;
+}
+#slideset2 > *:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.gray-container {
+  background-color: rgb(255, 255, 255);
+  padding: 1em 0 1em;
+}
+h4,
+h5 {
+  padding: 10px 0 10px;
+}
+.message {
+  padding: 8% 0 5%;
+}
+.message h4 {
+  font-size: 1em;
+}
+.message h5 {
+  font-size: 1em;
+  color: #ffba0a;
+}
+.message p {
+  text-align: justify;
+  padding: 5px 5px 5px 10px;
+  font-size: 0.8em;
+}
+.whoweAre h4 {
+  font-size: 1em;
+  padding: 20px 0 0;
+}
+.whoweAre h3 {
+  font-size: 1.5em;
+  color: #ffba0a;
+  padding-bottom: 10px;
+}
+.whoweAre p {
+  text-align: justify;
+  padding: 5px 20px 5px 20px;
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+#countdown li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+  background-color: rgb(180, 84, 175);
+  color: #fff;
+  font-weight: bold;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h5 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(60, 66, 70);
+}
+
+nav ul li a:hover {
+  background-color: rgb(83, 89, 94);
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+.uafc {
+  width: 18em;
+  position: relative;
+  animation-name: logoImage;
+  animation-duration: 3s;
+  animation-delay: 9s;
+  animation-fill-mode: both;
+  padding: 20px 0 10px;
+}
+@keyframes logoImage {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.message img {
+  width: 90%;
+}
+.message figcaption {
+  font-size: 0.7em;
+}
+.message span {
+  font-size: 1.2em;
+  color: rgb(180, 84, 175);
+}
+.strategylist {
+  margin: auto;
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: rgb(180, 84, 175);
+}
+.strategy span {
+  font-size: 1em;
+  font-weight: bold;
+}
+.strategy p {
+  font-size: 1em;
+  padding: 10px;
+}
+.strategy li {
+  margin: auto;
+  padding: 10px;
+}
+footer {
+  font-size: 1em;
+  background-color: rgb(61, 61, 60);
+  color: #fff;
+  margin-top: -20px;
+}
+footer P {
+  font-size: 0.8em;
+  background-color: rgb(61, 61, 60);
+  color: #fff;
+  padding: 10px 10px 5px 10px;
+}
+.footerimg {
+  width: 100px;
+}
+.fa img {
+  width: 50px;
+  padding: 10px 0 10px;
+}
+
+@media only screen and (min-width: 375px) {
+  .uafc {
+    width: 21em;
+    position: relative;
+    animation-name: logoImage;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    padding: 20px 0 10px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/worshipgw.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+  }
+
+  .uafc {
+    width: 25em;
+    height: 17em;
+    position: relative;
+    animation-name: logoImage;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    padding: 20px 0 10px;
+  }
+  nav ul {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .container {
+    overflow: hidden; /* Hide scrollbars */
+    text-align: center;
+    padding: 0.8em 0.4em;
+    width: 95%;
+    margin: auto;
+  }
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/worshipgw.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    height: 500px;
+  }
+  div .knowMore p {
+    top: 90px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .logo {
+    width: 70px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    width: 40px;
+    margin-top: 45%;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+  }
+  .btn {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  h4,
+  h5 {
+    padding: 10px 0 10px;
+  }
+  .message {
+    padding: 8% 0 5%;
+  }
+  .message h4 {
+    font-size: 1.5em;
+  }
+  .message h5 {
+    font-size: 1.4em;
+    color: #ffba0a;
+  }
+  .message p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  .whoweAre h4 {
+    font-size: 1.5em;
+  }
+  .whoweAre h3 {
+    font-size: 1.7em;
+    color: #ffba0a;
+    padding-bottom: 10px;
+  }
+  .whoweAre p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1em;
+  }
+  .whoweAre .text {
+    text-align: justify;
+    padding: 5px 20px 5px 20px;
+    margin: 0 20px 0 20px;
+    font-size: 1em;
+  }
+
+  .uafc {
+    width: 30em;
+    height: 20em;
+    position: relative;
+    animation-name: logoImage;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    padding: 20px 0 10px;
+  }
+
+  .message img {
+    width: 100%;
+  }
+  .message figcaption {
+    font-size: 0.9em;
+  }
+  .message span {
+    font-size: 1.4em;
+    color: rgb(180, 84, 175);
+  }
+  .strategylist {
+    margin: auto;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: rgb(180, 84, 175);
+  }
+  .strategy {
+    margin: auto;
+    list-style-type: none;
+  }
+  .strategy li {
+    float: left;
+    width: 33.33%;
+    color: rgb(255, 255, 255);
+  }
+  footer {
+    font-size: 1em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    margin-top: -20px;
+  }
+  footer P {
+    font-size: 0.8em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  address {
+    font-size: 1.2em;
+  }
+  .footerimg {
+    width: 90px;
+  }
+  #leftlogo {
+    width: 50%;
+    float: left;
+    padding-bottom: 10px;
+  }
+  #rightlogo {
+    width: 50%;
+    float: right;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+  .bottomBar {
+    width: 100%;
+    margin: auto;
+  }
+  nav ul {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    overflow: hidden; /* Hide scrollbars */
+    text-align: center;
+    padding: 0.8em 0.4em 0 0;
+    width: 98%;
+    margin: auto;
+  }
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/worshipgw.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    height: 600px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .logo {
+    width: 80px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    width: 50px;
+    margin-top: 30%;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+  }
+  .btn {
+    text-decoration: none;
+    color: #fff;
+  }
+  .knowMore {
+    font-size: 1em;
+    padding: 20px;
+  }
+  .knowMore p {
+    padding: 10px;
+  }
+  #slideset2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 10%;
+    font-size: 1.5em;
+  }
+
+  .quote1 {
+    margin-top: -10%;
+    font-size: 1.3em;
+  }
+  .quote2 {
+    margin-top: -10%;
+    font-size: 1.3em;
+  }
+  .gray-container {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0 0 0;
+  }
+  #countdown li {
+    display: inline-block;
+    font-size: 1.3em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background-color: rgb(180, 84, 175);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  h4,
+  h5 {
+    padding: 10px 0 10px;
+  }
+  .message {
+    padding: 8% 0 5%;
+  }
+  .message h4 {
+    font-size: 1.5em;
+  }
+  .message h5 {
+    font-size: 1.4em;
+    color: #ffba0a;
+  }
+  .message p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  .innermessage {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 55% 45%;
+    flex-direction: row-reverse;
+    padding: 10px;
+    direction: rtl;
+  }
+  .innermessage p {
+    direction: ltr;
+    padding-top: 0;
+  }
+  .innermessage img {
+    width: 100%;
+    height: 520px;
+  }
+  .innermessage figure {
+    padding-top: 0;
+  }
+  .whoweAre h4 {
+    font-size: 1.5em;
+  }
+  .whoweAre h3 {
+    font-size: 1.7em;
+    color: #ffba0a;
+    padding-bottom: 10px;
+  }
+  .whoweAre p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1em;
+  }
+  .whoweAre .text {
+    text-align: justify;
+    padding: 5px 20px 5px 20px;
+    margin: 0 20px 0 20px;
+    font-size: 0.9em;
+  }
+
+  .uafc {
+    width: 17em;
+    height: 15em;
+    position: relative;
+    animation-name: logoImage;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    padding: 20px 0 10px;
+  }
+  @keyframes logoImage {
+    from {
+      left: 0;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .message figcaption {
+    font-size: 0.5em;
+    direction: ltr;
+  }
+  .message span {
+    font-size: 1.5em;
+    color: rgb(180, 84, 175);
+  }
+  .grid1-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .strategy {
+    display: flex;
+    font-size: 0.9em;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  .strategy span {
+    display: inline-block;
+    font-size: 1em;
+  }
+  .strategy li {
+    margin: auto;
+    padding: 20px;
+  }
+  .strategy li p {
+    margin: auto;
+    padding: 10px 10px 0 20px;
+    text-align: justify;
+  }
+  .strategy li:first-child p {
+    margin: auto;
+    padding-left: 60px;
+  }
+  footer {
+    font-size: 1em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  footer P {
+    font-size: 0.8em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    padding: 15px 10px 5px 15px;
+  }
+  address {
+    font-size: 0.8em;
+  }
+  .footerimg {
+    width: 90px;
+  }
+
+  .grid2-container {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    padding: 10px 0 0 0;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  #bottomBar {
+    font-size: 1.3em;
+    padding-top: 30px;
+    margin: auto;
+  }
+  #Hline {
+    display: none;
+  }
+  nav ul {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    text-align: center;
+    padding: 0.8em 0.4em;
+    width: 95%;
+  }
+  .logo {
+    width: 85px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/worshipgw.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 630px;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+  }
+  .knowMore {
+    font-size: 1em;
+    padding: 20px;
+  }
+  .knowMore p {
+    padding: 10px;
+  }
+  #slideset2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 10%;
+    font-size: 1.7em;
+  }
+
+  .quote1 {
+    margin-top: -10%;
+    font-size: 1.5em;
+  }
+  .quote2 {
+    margin-top: -10%;
+    font-size: 1.5em;
+  }
+  .gray-container {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0 0;
+  }
+  h4,
+  h5 {
+    padding: 10px 0 10px;
+  }
+  .message {
+    padding: 8% 0 5%;
+  }
+  .message h4 {
+    font-size: 1.7em;
+  }
+  .message h5 {
+    font-size: 1.5em;
+    color: #ffba0a;
+  }
+  .message p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1.3em;
+  }
+  .whoweAre h4 {
+    font-size: 1.7em;
+    padding: 20px 0 0;
+  }
+  .whoweAre h3 {
+    font-size: 1.5em;
+    color: #ffba0a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .whoweAre .text {
+    text-align: justify;
+    padding: 5px 20px 5px 20px;
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+  #countdown li {
+    display: inline-block;
+    font-size: 1.7em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background-color: rgb(180, 84, 175);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(60, 66, 70);
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(83, 89, 94);
+  }
+
+  .exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+  }
+
+  .exit-btn img {
+    width: 15px;
+    cursor: pointer;
+  }
+  .uafc {
+    width: 28em;
+    height: 25em;
+  }
+
+  .innermessage {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    flex-direction: row-reverse;
+    padding: 10px;
+    direction: rtl;
+  }
+  .innermessage p {
+    direction: ltr;
+    padding-top: 0;
+  }
+  .innermessage img {
+    width: 100%;
+    height: 730px;
+  }
+  .message figcaption {
+    font-size: 1em;
+  }
+  .message span {
+    font-size: 1.2em;
+    color: rgb(180, 84, 175);
+  }
+  .strategylist {
+    margin: auto;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    background-color: rgb(180, 84, 175);
+  }
+
+  .strategy {
+    display: flex;
+    font-size: 1.3em;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  .strategy span {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+  .strategy li {
+    margin: auto;
+    padding: 20px;
+  }
+  .strategy li p {
+    margin: auto;
+    padding: 10px 10px 0 0px;
+    text-align: justify;
+  }
+
+  footer {
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  footer P {
+    font-size: 1em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    padding: 15px 10px 5px 15px;
+  }
+  address {
+    font-size: 1em;
+  }
+  .footerimg {
+    width: 100px;
+  }
+
+  .grid2-container {
+    display: grid;
+    grid-template-columns: 30% 30% 35%;
+    padding: 10px 0 0 0;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .bottomBar {
+    width: 100%;
+    font-size: 1.5em;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .show-desktop {
+    display: block;
+    margin: 0 auto 15% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    text-align: right;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    left: 20px;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    text-align: center;
+    padding: 0.8em 0.4em;
+    width: 90%;
+  }
+  .logo {
+    width: 85px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../img/worshipgw.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 650px;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+  }
+  .knowMore {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+  .knowMore p {
+    padding: 10px;
+  }
+  #slideset2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+  }
+  #slideset2 figcaption {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  #welcomeText {
+    margin-top: 8%;
+    font-size: 2em;
+  }
+
+  .quote1 {
+    margin-top: -10%;
+    font-size: 2em;
+    padding: 20px;
+  }
+  .quote2 {
+    margin-top: -12%;
+    font-size: 2em;
+    padding: 20px;
+  }
+  .gray-container {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0 0;
+  }
+  h4,
+  h5 {
+    padding: 10px 0 10px;
+  }
+  .message {
+    padding: 5% 0 5%;
+  }
+  .message h4 {
+    font-size: 1.7em;
+  }
+  .message h5 {
+    font-size: 1.5em;
+    color: #ffba0a;
+  }
+  .message p {
+    text-align: justify;
+    padding: 5px 5px 5px 10px;
+    font-size: 1.3em;
+    line-height: 2.1em;
+  }
+  .whoweAre h4 {
+    font-size: 1.7em;
+    padding: 20px 0 0;
+  }
+  .whoweAre h3 {
+    font-size: 1.5em;
+    color: #ffba0a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .whoweAre .text {
+    text-align: justify;
+    padding: 5px 20px 5px 20px;
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+  #countdown li {
+    display: inline-block;
+    font-size: 1.7em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+    background-color: rgb(180, 84, 175);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(60, 66, 70);
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(83, 89, 94);
+  }
+
+  .exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+  }
+
+  .exit-btn img {
+    width: 15px;
+    cursor: pointer;
+  }
+  .uafc {
+    width: 28em;
+    height: 25em;
+  }
+
+  .innermessage {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    flex-direction: row-reverse;
+    padding: 10px;
+    direction: rtl;
+  }
+  .innermessage p {
+    direction: ltr;
+    padding-top: 0;
+  }
+  .innermessage img {
+    width: 100%;
+    height: 730px;
+  }
+  .message figcaption {
+    font-size: 1em;
+  }
+  .message span {
+    font-size: 1.2em;
+    color: rgb(180, 84, 175);
+  }
+  .whoweAre {
+    width: 80;
+  }
+  .strategylist {
+    margin: auto;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 40px 0 40px;
+    background-color: rgb(180, 84, 175);
+  }
+
+  .strategy {
+    display: flex;
+    font-size: 1.5em;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  .strategy span {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+  .strategy li {
+    margin: auto;
+    padding: 20px;
+  }
+  .strategy li:first-child p {
+    padding-left: 110px;
+  }
+  .strategy li p {
+    margin: auto;
+    padding: 10px 10px 0 20px;
+  }
+
+  footer {
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  footer P {
+    font-size: 1.2em;
+    background-color: rgb(61, 61, 60);
+    color: #fff;
+    padding: 15px 10px 5px 15px;
+  }
+  address {
+    font-size: 1em;
+  }
+  .footerimg {
+    width: 100px;
+  }
+
+  .grid2-container {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    padding: 10px 0 0 0;
+  }
+  #leftlogo {
+    width: 100%;
+    font-size: 1.7em;
+  }
+  #rightlogo {
+    width: 100%;
+    font-size: 1.8em;
+  }
+  .bottomBar {
+    width: 100%;
+    font-size: 1.7em;
+    padding-top: 30px;
+    margin: auto;
+  }
+  .bottomBar img {
+    width: 80px;
+  }
+  .show-desktop {
+    display: block;
+    margin: 0 auto 15% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    text-align: right;
+    padding: 15px 15px;
+    font-size: 1.2em;
+    left: 20px;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+  }
+}
