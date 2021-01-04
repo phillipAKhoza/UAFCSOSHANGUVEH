@@ -40,9 +40,10 @@ header {
     url("../img/man.JPG");
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+
   background-repeat: no-repeat;
-  background-size: 100% 95%;
+  background-size: 100% 100%;
+  height: 65%;
 }
 
 section {
@@ -81,7 +82,7 @@ nav ul li a {
   display: block;
   width: 100%;
   padding: 1em 2em;
-  background-color: rgb(60, 66, 70);
+  background-color: inherit;
 }
 
 nav ul li a:hover {
@@ -108,6 +109,9 @@ nav ul li a:hover {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+}
+.activity-container {
+  padding: 20px;
 }
 .screen {
   position: relative;

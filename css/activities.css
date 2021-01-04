@@ -41,10 +41,10 @@ header {
     url("../img/activities.JPG");
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+
   background-repeat: no-repeat;
-  background-size: 100% 70%;
-  height: 400px;
+  background-size: 100% 100%;
+  height: 65%;
   overflow: hidden; /* Hide scrollbars */
 }
 
@@ -66,7 +66,7 @@ nav ul li a {
   display: block;
   width: 100%;
   padding: 1em 2em;
-  background-color: rgb(60, 66, 70);
+  background-color: inherit;
 }
 
 nav ul li a:hover {
@@ -143,6 +143,9 @@ div.gallery {
   border: 1px solid #ccc;
   padding: 0 0 20px 0;
   margin-bottom: 20px;
+}
+#recent {
+  padding: 0;
 }
 .activity-container p {
   padding: 50px;
