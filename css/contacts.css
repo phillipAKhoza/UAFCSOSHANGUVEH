@@ -115,7 +115,7 @@ nav ul li a:hover {
 }
 .screen {
   position: relative;
-  background-color: #3e3e3e;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 .screen:after {
@@ -130,48 +130,14 @@ nav ul li a:hover {
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
-.screen-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #4d4d4f;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.screen-header-left {
-  margin-right: auto;
-}
-.screen-header-button {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  border-radius: 8px;
-  background-color: #fff;
-}
-.screen-header-button.close {
-  background-color: #ed1c6f;
-}
-.screen-header-button.maximize {
-  background-color: #e8e925;
-}
-.screen-header-button.minimize {
-  background-color: #74c54f;
-}
+
 .screen-header-right {
   display: flex;
-}
-.screen-header-ellipsis {
-  width: 3px;
-  height: 3px;
-  margin-left: 2px;
-  border-radius: 8px;
-  background-color: #999;
 }
 
 .app-tittle {
   position: relative;
-  color: #ea1d6f;
+  color: #ffffff;
   font-size: 1.7em;
   padding: 10px 0 10px;
 }
@@ -179,7 +145,7 @@ nav ul li a:hover {
 .app-contact {
   margin-top: auto;
   font-size: 0.8em;
-  color: #888;
+  color: rgb(194, 192, 192);
 }
 .app-form-group {
   margin-bottom: 20px;
@@ -197,24 +163,24 @@ nav ul li a:hover {
   width: 100%;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #666;
-  color: #ddd;
+  border-bottom: 1px solid rgb(189, 186, 186);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
   transition: border-color 0.2s;
 }
 .app-form-control::placeholder {
-  color: #666;
+  color: rgb(175, 175, 175);
 }
 
 .app-form-control::focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: rgb(241, 207, 207);
 }
 .app-form-button {
   background-color: transparent;
   border: none;
-  color: #ea1d6f;
+  color: #ffffff;
   font-size: 14px;
   cursor: pointer;
   outline: none;
@@ -271,7 +237,7 @@ footer P {
     font-size: 2.5em;
   }
   .form-container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-bottom: 10%;
   }
@@ -311,25 +277,10 @@ footer P {
     border-radius: 8px;
     background-color: #fff;
   }
-  .screen-header-button.close {
-    background-color: #ed1c6f;
-  }
-  .screen-header-button.maximize {
-    background-color: #e8e925;
-  }
-  .screen-header-button.minimize {
-    background-color: #74c54f;
-  }
   .screen-header-right {
     display: flex;
   }
-  .screen-header-ellipsis {
-    width: 3px;
-    height: 3px;
-    margin-left: 2px;
-    border-radius: 8px;
-    background-color: #999;
-  }
+
   .screen-body {
     display: flex;
   }
@@ -348,7 +299,7 @@ footer P {
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #ea1d6f;
+    color: #ffffff;
     font-size: 2.1em;
     width: 10%;
     font-weight: bold;
@@ -362,13 +313,13 @@ footer P {
     bottom: 2px;
     width: 60px;
     height: 5px;
-    background-color: #ea1d6f;
+    background-color: #fdfdfd;
     font-weight: bold;
   }
   .app-contact {
     margin-top: auto;
     font-size: 1.5em;
-    color: #888;
+    color: rgb(194, 194, 194);
   }
   .app-form-group {
     margin-bottom: 15px;
@@ -385,8 +336,8 @@ footer P {
     padding: 10px 0;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: rgb(231, 229, 229);
     font-size: 14px;
     text-transform: uppercase;
     outline: none;
@@ -394,7 +345,7 @@ footer P {
   }
   .app-form-control::placeholder {
     font-size: 1.5em;
-    color: #666;
+    color: rgb(175, 175, 175);
   }
 
   .app-form-control::focus {
@@ -403,7 +354,7 @@ footer P {
   .app-form-button {
     background-color: transparent;
     border: none;
-    color: #ea1d6f;
+    color: #ffffff;
     font-size: 1.5em;
     cursor: pointer;
     outline: none;
