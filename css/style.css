@@ -62,6 +62,24 @@ header {
   text-decoration: none;
   color: #fff;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 0, 179, 0.7);
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
 .knowMore {
   padding-top: 10px;
   font-size: 0.9em;
