@@ -23,15 +23,15 @@
 
       //do something later when date is reached
       if (distance < 0) {
-        let headline = document.getElementById("headline"),
-          countdown = document.getElementById("countdown"),
-          content = document.getElementById("content");
+        let headline = document.getElementById("headline");
 
-        headline.innerText = "It's my birthday!";
-        countdown.style.display = "none";
-        content.style.display = "block";
+        headline.innerText =
+          "The Service has Started. Do join Us or live stream Our Sermon on our facebook page";
 
-        clearInterval(x);
+        if (distance < -1000 * 60 * 60 * 24) {
+          countDown += 1000 * 60 * 60 * 24 * 7;
+          headline.innerText = "The next Service will be in:";
+        }
       }
       //seconds
     }, 0);
